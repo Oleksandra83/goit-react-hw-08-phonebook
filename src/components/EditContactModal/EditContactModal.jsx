@@ -26,7 +26,7 @@ export const EditContactModal = ({
 	isOpen,
 	data,
 	onClose,
-	setModalIsopen,
+	setModalIsOpen,
 }) => {
 	const [formValues, setFormValues] = useState(data || {});
 	const initialValues = { name: '', number: '' };
@@ -38,7 +38,7 @@ export const EditContactModal = ({
 	const dispatch = useDispatch();
 	const closeModal = () => {
 		onClose();
-		setModalIsopen(false);
+		setModalIsOpen(false);
 	};
 
 	const onHandleSubmit = (values, { resetForm }) => {
