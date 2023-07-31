@@ -1,16 +1,27 @@
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { GlobalStyle } from 'styles/GlobalStyle';
+import UserRoutes from './UserRoutes';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getCurrentUser } from 'redux/auth/authOperations';
+import { useAuth } from 'hooks/useAuth';
+import { Loader } from './Loader/Loader';
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+	const dispatch = useDispatch();
+	const { isRefreshing } = useAuth();
+
+	useEffect(() => {
+		dispatch(getCurrentUser());
+	}, [dispatch]);
+
+	return (
+		<>
+			{isRefreshing && <Loader />}
+			{!isRefreshing && <UserRoutes />}
+			<ToastContainer />
+			<GlobalStyle />
+		</>
   );
 };
