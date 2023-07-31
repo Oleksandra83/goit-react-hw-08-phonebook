@@ -9,8 +9,10 @@ export const Item = styled.li`
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 8px;
-	color: #000;
+	gap: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #4fb892;
+	color: #063a36;
 	text-shadow: 2px 2px 5px white;
 	font-size: 14px;
 
@@ -19,7 +21,7 @@ export const Item = styled.li`
 		text-align: center;
 		color: #063a36;
 		font-style: italic;
-		font-size: 16px;
+		font-size: 14px;
 	}
 `;
 
@@ -52,7 +54,7 @@ export const Btn = styled.button`
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
-	padding: 10px;
+	padding: 8px;
 	border: none;
 	outline: none;
 	border-radius: 50%;
@@ -114,8 +116,8 @@ export const ModalPhotoWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60px;
-	width: 60px;
+	height: 40px;
+	width: 40px;
 	border-radius: 50%;
 	box-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px, rgba(0, 0, 0, 0.5) 1px 1px 1px;
 	cursor: pointer;

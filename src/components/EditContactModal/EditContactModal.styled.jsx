@@ -8,9 +8,9 @@ export const Form = styled(FormikForm)`
 	align-items: center;
 	gap: 32px;
 	margin-bottom: 16px;
-	padding: 8px;
+	padding: 8px 4px;
 	max-width: 100%;
-	width: 480px;
+	width: 460px;
 	height: auto;
 `;
 
@@ -19,7 +19,7 @@ export const FormField = styled.label`
 	flex-direction: column;
 	gap: 8px;
 	max-width: 100%;
-	width: 480px;
+	width: 460px;
 	height: auto;
 	text-shadow: 2px 2px 5px white;
 	color: #063a36;
