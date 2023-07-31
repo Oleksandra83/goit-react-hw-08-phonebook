@@ -1,6 +1,6 @@
 export const customStylesModal = {
 	overlay: {
-		bacgroundColor: 'rgba(142, 154, 175, 0.8)',
+		backgroundColor: 'rgba(194, 209, 188, 0.8)',
 		zIndex: 1500,
 	},
 	content: {
@@ -18,7 +18,7 @@ export const customStylesModal = {
 		boxShadow: '2px 2px 2px #0f0f0f',
 		border: 'none',
 		borderRadius: 'none',
-		bacgroundColor: '#ebecf0',
+		backgroundColor: '#ecf8f4',
 		color: '#434343',
 		textShadow: '1px 4px 6px #a8abb7, 1px -2px 2px #fff',
 	},
@@ -26,7 +26,7 @@ export const customStylesModal = {
 
 export const customStylesInsideModal = {
 	overlay: {
-		bacgroundColor: 'rgba(142, 154, 175, 0.8)',
+		backgroundColor: 'rgba(194, 209, 188, 0.8)',
 		zIndex: 1501,
 	},
 	content: {
@@ -49,7 +49,7 @@ export const customStylesInsideModal = {
 		boxShadow: '2px 2px 2px #0f0f0f',
 		border: 'none',
 		borderRadius: 'none',
-		bacgroundColor: '#ebecf0',
+		backgroundColor: '#ecf8f4',
 		color: '#434343',
 		textShadow: '1px 4px 6px #a8abb7, 1px -2px 2px #fff',
 	},

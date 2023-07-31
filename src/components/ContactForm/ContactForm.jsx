@@ -57,7 +57,7 @@ export const ContactForm = () => {
 						placeholder="+38(096)000-00-00" />
 					<ErrorMessage name="number" component="span" />
 				</FormField>
-				<FormButton type="sumbmit">
+				<FormButton type="submit">
 					<IoMdPersonAdd size="16" />
 					Add contact
 				</FormButton>

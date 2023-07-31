@@ -34,7 +34,7 @@ export const LabelForm = styled.div`
 `;
 
 export const LabelSpan = styled.span`
-	color: ${props => props.theme.colors.black};
+	color: #000;
 `
 
 export const FieldInput = styled(Field)`
@@ -90,7 +90,7 @@ export const FormButton = styled.button`
 			stroke: #063a36; 
 		}
 		&:active {
-			background-color: ${props => props.theme.colors.white};
+			background-color: #fff;
 			color: #063a36;
 			box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 			svg {

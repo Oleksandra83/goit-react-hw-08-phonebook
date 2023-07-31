@@ -18,7 +18,7 @@ import { useState } from 'react';
 const defaultTheme = createTheme({
 	palette: {
 		primary: {
-			main: '#fff'
+			main: '#388b6d'
 		},
 	},
 });
@@ -94,7 +94,6 @@ export default function Login() {
 							m: 1,
 							backgroundColor: 'primary.main',
 							boxShadow: 3,
-							color: '#000000b0',
 						}}>
 							<LockOutlinedIcon />
 						</Avatar>

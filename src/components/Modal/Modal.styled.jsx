@@ -19,7 +19,6 @@ export const BorderInside = styled.div`
 	padding: 8px;
 	border-radius: 50%;
 	border: none;
-	margin-bottom: 10px;
 	box-shadow: inset 2px 2px 4px #9da2b6, inset -5px -5px 8px #fff;
 
 	&:hover,
@@ -32,15 +31,15 @@ export const CloseBtn = styled.button`
 	position: absolute;
 	top: 5px;
 	right: 5px;
-	padding: 4px 8px;
+	padding: 8px 4px;
 	width: 30px;
 	height: 30px;
 	border: none;
 	outline: none;
 	border-radius: 50%;
-	color: ${props => props.theme.colors.black};
+	color: #063a36;
 	background-color: transparent;
-	box-shadow: ${props => props.theme.shadows.boxShadow};
+	box-shadow: -1px -1px 1px #888888b0, 1px 1px 1px #000000b0;
 	transition: all 0.2s ease-in-out;
 
 	&:hover,
@@ -54,7 +53,7 @@ export const CloseBtn = styled.button`
 	}
 
 	&:active {
-			background-color: ${props => props.theme.colors.white};
+			background-color: #d9faf0;
 			svg {
 				fill: #063a36;
 				stroke: #fff; 
@@ -72,8 +71,8 @@ export const ModalPhoto = styled.img`
 
 export const PhotoThumb = styled.div`
 	margin-bottom: 0;
-	width: 150px;
-	height: 150px;
+	width: 170px;
+	height: 160px;
 	border-radius: 50%;
 	overflow: hidden;
 `;
@@ -99,13 +98,13 @@ export const PhotoDescr = styled.div`
 `;
 
 export const Button = styled.button`
-	padding: 4px 8px;
+	padding: 8px 4px;
 	width: 30px;
 	height: 30px;
 	border: none;
 	outline: none;
 	border-radius: 50%;
-	color: ${props => props.theme.colors.black};
+	color: #063a36;
 	background-color: transparent;
 	box-shadow: -2px -2px 4px #fff, 3px 3px 5px rgba(0, 0, 0, 0.1);
 	transition: all 0.2s ease-in-out;
@@ -121,7 +120,7 @@ export const Button = styled.button`
 	}
 
 	&:active {
-			background-color: ${props => props.theme.colors.white};
+			background-color: #fff;
 			box-shadow: inset -1px -1px 3px #fff, inset 1px 1px 3px rgba(0, 0, 0, 0.1);
 			svg {
 				fill: #063a36;

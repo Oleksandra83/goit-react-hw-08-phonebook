@@ -95,7 +95,11 @@ export default function Registration() {
 							flexDirection: 'column',
 							alignItems: 'center',
 						}}>
-						<Avatar sx={{ m: 1, backgroundColor: 'primary.main', boxShadow: 3 }}>
+						<Avatar sx={{
+							m: 1,
+							backgroundColor: 'primary.main',
+							boxShadow: 3,
+						}}>
 							<LockOutlinedIcon />
 						</Avatar>
 						<Typography
@@ -132,6 +136,7 @@ export default function Registration() {
 										fullWidth
 										id="email"
 										label="Email Address"
+										name="email"
 										autoComplete="email"
 										error={empty.email}
 										sx={{ boxShadow: 3 }}
